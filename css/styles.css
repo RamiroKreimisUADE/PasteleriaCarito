@@ -1,0 +1,369 @@
+:root {
+    /* Colores principales mejorados - Paleta más armoniosa */
+    --rosa-pastel: #F8C8DC;
+    --rosa-pastel-oscuro: #E2A9C3;
+    --rosa-suave: #F5E1E8;
+    --marron-oscuro: #5D4037;
+    --marron-medio: #795548;
+    --marron-claro: #A1887F;
+    --dorado: #D4AF37;
+    --dorado-oscuro: #B8860B;
+    --dorado-suave: #F0E6D2;
+    
+    /* Colores neutros */
+    --blanco-hueso: #FDF6E3;
+    --blanco: #FFFFFF;
+    --gris-claro: #F8F9FA;
+    
+    /* Estados */
+    --rojo: #B00020;
+    --verde: #2E7D32;
+    --negro: #000000;
+}
+/* --------------------------------------------------------------------------- */
+
+/* Fondo de toda la pagina */
+body.text-bg-dark {
+    background-color: var(--blanco-hueso) !important;
+    color: var(--marron-oscuro) !important; /* Para que el texto sea visible */
+	font-weight: 500; /* Mejor legibilidad */
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Tipografía personalizada */
+
+/* Titulos */
+h1 {
+    font-family: "Corinthia", cursive;
+    letter-spacing: 1px;
+    font-size: 3.5rem; /* Tamaño grande */
+}
+
+/* --------------------------------------------------------------------------- */
+
+#bienvenido {
+    background-image: url(/img/banner.png);
+    background-size: cover;       /* Que se ajuste a la caja */
+    background-position: center;  /* Centrado siempre */
+    background-repeat: no-repeat;
+    
+    width: 100%;                  /* Que ocupe todo el ancho */
+    min-height: 70vh;            /* Al menos la altura completa de la pantalla */
+    display: flex;                /* Para centrar el contenido */
+    align-items: center;          /* Centrar verticalmente */
+    justify-content: center;      /* Centrar horizontalmente */
+    padding: 2rem;                /* Espaciado interno para que no se pegue al borde */
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#bienvenido::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+}
+
+#bienvenido .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.card-img-top {
+    height: 290px;       /* Alto fijo para todas las imágenes */
+    object-position: center; /* Centra la imagen */
+}
+
+/* Mejorar contraste en cards */
+.card {
+    background-color: var(--blanco-hueso) !important;
+    border: 1px solid var(--rosa-pastel-oscuro);
+}
+
+.card-title {
+    color: var(--marron-oscuro) !important;
+    font-weight: 600;
+}
+
+.card-text {
+    color: var(--marron-medio) !important;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.navbar-custom {
+    background: linear-gradient(135deg, var(--rosa-pastel-oscuro) 0%, var(--rosa-pastel) 100%) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0.8rem 0;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--marron-oscuro);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    margin: 0 0.2rem;
+    position: relative;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--blanco);
+    background-color: var(--marron-oscuro);
+    transform: translateY(-2px);
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+    color: var(--blanco);
+    background-color: var(--dorado);
+    font-weight: 700;
+}
+
+/* logo */
+.navbar-brand img {
+    border: 2px solid var(--marron-oscuro);
+    background-color: var(--blanco);
+    padding: 3px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--marron-oscuro) !important;
+    font-size: 1.25rem;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+/* Botones personalizados */
+.btn-dark {
+    background-color: var(--marron-oscuro) !important;
+    border-color: var(--marron-oscuro) !important;
+    color: var(--blanco-hueso) !important;
+}
+
+.btn-dark:hover {
+    background-color: var(--dorado) !important;
+    border-color: var(--dorado) !important;
+    color: var(--marron-oscuro) !important;
+}
+
+.btn-outline-dark {
+    border-color: var(--marron-oscuro) !important;
+    color: var(--marron-oscuro) !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--marron-oscuro) !important;
+    color: var(--blanco-hueso) !important;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#valores {
+    background: linear-gradient(135deg, var(--blanco-hueso) 0%, #ffffff 100%);
+}
+
+#valores .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 1rem;
+}
+
+#valores .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+#valores .card-body i {
+    color: var(--dorado);
+}
+
+#valores .card-body-red i {
+    color: var(--rojo);
+}
+
+#valores .card-body-black i {
+    color: var(--negro);
+}
+
+/* --------------------------------------------------------------------------- */
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--dorado) !important;
+}
+
+footer.bg-dark{
+    background: linear-gradient(135deg, var(--marron-oscuro) 0%, var(--marron-medio) 100%);
+    margin-top: 0rem;
+}
+
+footer {
+    color: var(--dorado-suave) !important;
+    line-height: 1.8;
+}
+
+.social-media a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    color: var(--dorado) !important;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.bg-warning {
+    background: linear-gradient(135deg, var(--dorado) 0%, var(--dorado-oscuro) 100%) !important;
+    color: var(--marron-oscuro) !important;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid var(--rosa-suave);
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.01);
+}
+
+/* --------------------------------------------------------------------------- */
+
+.address-text {
+    color: var(--marron-medio);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-link {
+    color: var(--marron-oscuro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.contact-link:hover {
+    color: var(--dorado);
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.contact-form-container {
+    background: var(--blanco);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid var(--rosa-suave);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-label {
+    color: var(--marron-oscuro);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.custom-input {
+    border: 2px solid var(--rosa-suave);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--gris-claro);
+    font-size: 1rem;
+}
+
+.custom-input:focus {
+    border-color: var(--dorado);
+    background-color: var(--blanco);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+/* Botones personalizados */
+.btn-custom-primary {
+    background: linear-gradient(135deg, var(--dorado) 0%, var(--dorado-oscuro) 100%);
+    border: none;
+    color: var(--marron-oscuro);
+    font-weight: 600;
+    padding: 0.9rem 2.5rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Tarjetas de información de contacto */
+.contact-info-card {
+    background: var(--blanco);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--dorado);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--dorado);
+}
+
+.contact-info-card h4 {
+    color: var(--marron-oscuro);
+    font-weight: 600;
+}
+
+.contact-info-card p {
+    color: var(--marron-medio);
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Forzar que el footer quede pegado abajo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer hacia el final de la página */
+}
+
+/* --------------------------------------------------------------------------- */

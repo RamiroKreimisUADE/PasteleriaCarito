@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Corinthia:wght@400;700&display=swap" rel="stylesheet"> <!-- Font -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contacto</title>
+</head>
+
+<body class="text-bg-dark">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom" aria-label="Tenth navbar example">
+<div class="container-fluid">
+    <!-- logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
+        <img src="img/icon.png" alt="Logo de Carito Pasteles" width="40" height="40" class="me-2 rounded-circle">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a> </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Bienvenida -->
+<section id="bienvenido" class="d-flex align-items-start">
+<div class="container text-center mt-5">
+    <h1>Contacto</h1>
+</div>
+</section>
+
+<!-- Mapa de ubicacion -->
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Donde Encontrarnos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="ratio ratio-16x9 shadow rounded">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4904805595806!2d-58.38449352350305!3d-34.617043558203406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1759270151661!5m2!1ses-419!2sar" 
+                style="border:0;" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Carito Pasteles en Galería UADE">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-center mt-3">Galeria UADE, 1° piso. Lima 757, C1073 Cdad. Autónoma de Buenos Aires</p>
+        <p class="address-text mb-2"><i class="bi bi-telephone-fill me-2"></i>Tel: <a href="tel:12345678" class="contact-link">1234-5678</a></p>
+        <p class="address-text"><i class="bi bi-whatsapp me-2"></i>Cel: <a href="https://wa.me/541112345678" class="contact-link">11 1234-5678</a></p>
+    </div>
+</div>
+
+<!-- Formulario de contacto  -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h2 class="mb-4 text-center section-title">¡Contáctanos!</h2>
+            <div class="contact-form-container p-4 p-md-5">
+                <form class="contact-form" id="contactForm">
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control custom-input" id="nombre" placeholder="Escribe tu nombre" required>
+                            </div>
+                            
+                            <div class="mb-3 pt-2">
+                                <label for="correo" class="form-label">E-mail</label>
+                                <input type="email" class="form-control custom-input" id="correo" placeholder="direccion@correo.com" required>
+                            </div>
+
+                            <div class="mb-3 mt-4 pt-2">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control custom-input" id="telefono" placeholder="Tu número de teléfono">
+                            </div>
+                        </div>
+
+                        <!-- Columna derecha -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control custom-input" id="mensaje" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="tipo-evento" class="form-label">Tipo de evento (opcional)</label>
+                                <select class="form-select custom-input" id="tipo-evento">
+                                    <option value="" selected>Selecciona una opción</option>
+                                    <option value="cumpleaños">Cumpleaños</option>
+                                    <option value="boda">Boda</option>
+                                    <option value="aniversario">Aniversario</option>
+                                    <option value="empresarial">Evento empresarial</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón enviar -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-custom-primary btn-lg px-5">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Información adicional de contacto -->
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="contact-info-card p-4 h-100">
+                <i class="bi bi-clock-fill contact-icon"></i>
+                <h4 class="mt-3">Horarios</h4>
+                <p>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 9:00 - 14:00</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="contact-info-card p-4 h-100">
+                <i class="bi bi-truck contact-icon"></i>
+                <h4 class="mt-3">Delivery</h4>
+                <p>Realizamos envíos a domicilio en CABA y GBA con previa reserva</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="contact-info-card p-4 h-100">
+                <i class="bi bi-credit-card contact-icon"></i>
+                <h4 class="mt-3">Métodos de Pago</h4>
+                <p>Aceptamos efectivo, tarjetas de crédito/débito y transferencias</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+<div class="container px-5">
+    <div class="row gy-4 gx-5">
+        <!-- Columna del Local -->
+        <div class="col-12 col-md-3 text-center">
+            <h3 class="fw-bold mb-3">Carito Pasteles</h3>
+            <address>
+                Lima 757, C1073<br>
+                Tel: <a href="tel:0987654321" class="text-light">1234-5678</a><br>
+                Cel: <a href="tel:1234567890" class="text-light">11 1234-5678</a>
+            </address>
+        </div>
+        <!-- Columna Nosotros -->
+        <div class="col-6 col-md-3 text-center">
+            <h4 class="mb-3">
+                <a href="index.html" class="text-light text-decoration-none">Home</a>
+            </h4>
+        </div>
+        <!-- Columna Contacto -->
+        <div class="col-6 col-md-3 text-center">
+            <h4 class="mb-3">
+                <a href="contacto.html" class="text-light text-decoration-none">Contacto</a>
+            </h4>
+            <div class="social-media pt-2">
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-pinterest"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <!-- Columna Productos -->
+        <div class="col-12 col-md-3 text-center">
+            <h4 class="mb-3">
+                <a href="productos.html" class="text-light text-decoration-none">Productos</a>
+            </h4>
+            <ul class="list-unstyled">
+                <li class="py-1"><a href="productos.html#prod1" class="text-light text-decoration-none">Cumpleaños</a></li>
+                <li class="py-1"><a href="productos.html#prod2" class="text-light text-decoration-none">Matilda</a></li>
+                <li class="py-1"><a href="productos.html#prod3" class="text-light text-decoration-none">White</a></li>
+                <li class="py-1"><a href="productos.html#prod4" class="text-light text-decoration-none">Chocolate</a></li>
+                <li class="py-1"><a href="productos.html#prod5" class="text-light text-decoration-none">Cerezas</a></li>
+                <li class="py-1"><a href="productos.html#prod6" class="text-light text-decoration-none">Rainbow</a></li>
+                <li class="py-1"><a href="productos.html#prod7" class="text-light text-decoration-none">Cheesecake</a></li>
+                <li class="py-1"><a href="productos.html#prod8" class="text-light text-decoration-none">Cookies</a></li>
+            </ul>
+        </div>
+    </div> <!-- Fin de la Caja -->
+    <hr class="border-light">
+    <div class="d-sm-flex justify-content-between py-2">
+        <p class="mb-0">2025 © Ramiro Kreimis. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="link_ejemplo.html" class="text-light text-decoration-none pe-3" target="_blank">Terms of use</a>
+            <a href="link_ejemplo.html" class="text-light text-decoration-none" target="_blank">Privacy policy</a>
+        </p>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
