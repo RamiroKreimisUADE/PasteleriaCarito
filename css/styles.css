@@ -47,7 +47,7 @@ h1 {
 /* --------------------------------------------------------------------------- */
 
 #bienvenido {
-    background-image: url(/img/banner.png);
+    background-image: url('./img/banner.png');
     background-size: cover;       /* Que se ajuste a la caja */
     background-position: center;  /* Centrado siempre */
     background-repeat: no-repeat;
