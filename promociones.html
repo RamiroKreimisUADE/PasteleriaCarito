@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon2.png" type="image/x-icon"> <!-- Icono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Corinthia:wght@400;700&display=swap" rel="stylesheet"> <!-- Font -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/promociones.css">
+    <title>Promociones</title>
+</head>
+
+<body class="text-bg-dark">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom" aria-label="Tenth navbar example">
+<div class="container-fluid">
+    <!-- logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
+        <img src="img/icon.png" alt="Logo de Carito Pasteles" width="40" height="40" class="me-2 rounded-circle">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a> </li>
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="promociones.html">Promociones</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a> </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Bienvenida -->
+<section id="bienvenido" class="d-flex align-items-start">
+<div class="container text-center mt-5">
+    <h1>Promociones</h1>
+    <p class="lead">¡Enterate de nuestras promos y descuentos!</p>
+</div>
+</section>
+
+<!-- Promociones -->
+<section id="promociones" class="py-5">
+<div class="container">
+    <h2 class="fw-bold text-center mb-5">Nuestras Promociones</h2>
+    <div class="row g-4">
+        <!-- PROMOCIÓN 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow promo-card">
+                <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&w=800&q=80"
+                    class="card-img-top" alt="Promo 50% OFF" style="height: 200px; object-fit: cover;">
+                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">50% OFF</span>
+                </div>
+
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">50% OFF en la Tercera Torta</h5>
+                    <p class="card-text flex-grow-1">
+                        Comprá tres tortas y obtené la tercera al 50% de descuento. ¡Ideal para compartir!
+                    </p>
+
+                    <form class="promo-form mt-3" data-promo="1">
+                        <label for="promo1-torta" class="form-label">Elegí tu torta:</label>
+                        <select id="promo1-torta" class="form-select mb-2">
+                        <option value="25000">Torta de Cumpleaños - $25.000</option>
+                        <option value="25000">Matilda - $25.000</option>
+                        <option value="30000">White ButterCream - $30.000</option>
+                        <option value="30000">Chocolate y ButterCream - $30.000</option>
+                        <option value="20000">Torta de Cerezas - $20.000</option>
+                        <option value="20000">Rainbow ButterCream - $20.000</option>
+                        <option value="30000">Cheesecake - $30.000</option>
+                        </select>
+
+                        <label for="promo1-cantidad" class="form-label">Cantidad:</label>
+                        <input type="number" id="promo1-cantidad" class="form-control mb-3" value="1" min="1">
+
+                        <p class="mb-1"><strong>Precio sin descuento:</strong> <span class="precio-normal">$0</span></p>
+                        <p><strong>Precio con descuento:</strong> <span class="precio-descuento text-success">$0</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROMOCIÓN 2 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow promo-card">
+                <div class="position-relative">
+                <img src="img/descuento_10.jpg" class="card-img-top" alt="Promo 10% OFF" style="height: 200px; object-fit: cover;">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">10% OFF</span>
+                </div>
+
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">10% OFF en Seleccionados</h5>
+                    <p class="card-text flex-grow-1">
+                        Elegí cualquiera de nuestras tortas seleccionadas y obtené un 10% de descuento automático.
+                    </p>
+
+                    <ul>
+                        <li>Torta de Cumpleaños - $25.000</li>
+                        <li>Matilda - $25.000</li>
+                        <li>White ButterCream - $30.000</li>
+                    </ul>
+
+                    <form class="promo-form mt-3" data-promo="2">
+                        <label for="promo2-torta" class="form-label">Elegí tu torta:</label>
+                        <select id="promo2-torta" class="form-select mb-2">
+                        <option value="25000">Torta de Cumpleaños</option>
+                        <option value="25000">Matilda</option>
+                        <option value="30000">White ButterCream</option>
+                        </select>
+
+                        <p class="mb-1"><strong>Precio sin descuento:</strong> <span class="precio-normal">$0</span></p>
+                        <p><strong>Precio con descuento:</strong> <span class="precio-descuento text-success">$0</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROMOCIÓN 3 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow promo-card">
+                <div class="position-relative">
+                <img src="https://media.istockphoto.com/id/1432456087/vector/3d-tag-price-icon-with-bell-notification-for-discount-coupon-online-sales-with-an-excellent.jpg?s=612x612&w=0&k=20&c=2Aqy7oRTE51S97MZWzGbWiW0VAXfNlo1XMfDuYIbkHo="
+                    class="card-img-top" alt="Combo Dulce" style="height:200px; object-fit:cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">15% OFF</span>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Armá tu Combo Dulce</h5>
+                    <p class="card-text flex-grow-1">
+                        Elegí 2 productos y obtené un 15% de descuento sobre el total. ¡Combiná tus favoritos!
+                    </p>
+
+                    <form class="promo-form mt-3" data-promo="3">
+                        <label class="form-label">Producto 1:</label>
+                        <select class="form-select mb-2">
+                        <option value="25000">Torta de Cumpleaños - $25.000</option>
+                        <option value="25000">Matilda - $25.000</option>
+                        <option value="30000">White ButterCream - $30.000</option>
+                        <option value="20000">Torta de Cerezas - $20.000</option>
+                        <option value="5000">Cookies - $5.000</option>
+                        </select>
+
+                        <label class="form-label">Producto 2:</label>
+                        <select class="form-select mb-2">
+                        <option value="25000">Torta de Cumpleaños - $25.000</option>
+                        <option value="25000">Matilda - $25.000</option>
+                        <option value="30000">White ButterCream - $30.000</option>
+                        <option value="20000">Torta de Cerezas - $20.000</option>
+                        <option value="5000">Cookies - $5.000</option>
+                        </select>
+
+                        <p class="mb-1"><strong>Precio sin descuento:</strong> <span class="precio-normal">$0</span></p>
+                        <p><strong>Precio con descuento:</strong> <span class="precio-descuento text-success">$0</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fin de las Promociones --> 
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+<div class="container px-5">
+    <div class="row gy-4 gx-5">
+        <!-- Columna Home -->
+        <div class="col-12 col-md-3 mb-3 text-center">
+            <h3 class="fw-bold mb-3">
+                <a href="index.html" class="text-light text-decoration-none">Carito Pasteles</a>
+            </h3>
+            <address>
+                Lima 757, C1073<br>
+                Tel: <a href="tel:0987654321" class="text-light">1234-5678</a><br>
+                Cel: <a href="tel:1234567890" class="text-light">11 1234-5678</a>
+            </address>
+        </div>
+        <!-- Columna Promociones -->
+        <div class="col-12 col-md-3 mb-3 text-center">
+            <h4 class="mb-3">
+                <a href="promociones.html" class="text-light text-decoration-none">Promociones</a>
+            </h4>
+        </div>
+        <!-- Columna Contacto -->
+        <div class="col-12 col-md-3 mb-3 text-center">
+            <h4 class="mb-3">
+                <a href="contacto.html" class="text-light text-decoration-none">Contacto</a>
+            </h4>
+            <div class="social-media pt-2">
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-pinterest"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="link_ejemplo.html" target="_blank" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <!-- Columna Productos -->
+        <div class="col-12 col-md-3 mb-3 text-center">
+            <h4 class="mb-3">
+                <a href="productos.html" class="text-light text-decoration-none">Productos</a>
+            </h4>
+            <ul class="list-unstyled">
+                <li class="py-1"><a href="productos.html#prod1" class="text-light text-decoration-none">Cumpleaños</a></li>
+                <li class="py-1"><a href="productos.html#prod2" class="text-light text-decoration-none">Matilda</a></li>
+                <li class="py-1"><a href="productos.html#prod3" class="text-light text-decoration-none">White </a></li>
+                <li class="py-1"><a href="productos.html#prod4" class="text-light text-decoration-none">Chocolate</a></li>
+                <li class="py-1"><a href="productos.html#prod5" class="text-light text-decoration-none">Cerezas</a></li>
+                <li class="py-1"><a href="productos.html#prod6" class="text-light text-decoration-none">Rainbow</a></li>
+                <li class="py-1"><a href="productos.html#prod7" class="text-light text-decoration-none">Cheesecake</a></li>
+                <li class="py-1"><a href="productos.html#prod8" class="text-light text-decoration-none">Cookies</a></li>
+            </ul>
+        </div>
+    </div> <!-- Fin de la Caja -->
+    <hr class="border-light">
+    <div class="d-sm-flex justify-content-between py-2">
+        <p class="mb-0">2025 © Ramiro Kreimis. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="link_ejemplo.html" class="text-light text-decoration-none pe-3" target="_blank">Terms of use</a>
+            <a href="link_ejemplo.html" class="text-light text-decoration-none" target="_blank">Privacy policy</a>
+        </p>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/promociones.js"></script>
+</body>
+</html>
+
