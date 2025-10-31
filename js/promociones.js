@@ -13,13 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputCantidad = form.querySelector("input[type='number']");
     const normalEl = form.querySelector(".precio-normal");
     const descuentoEl = form.querySelector(".precio-descuento");
+    const ahorroEl = form.querySelector(".monto-ahorro");
 
     // Calcular precios base
     let totalNormal = 0;
-
-    selects.forEach(select => {
-      totalNormal += parseFloat(select.value);
-    });
+    selects.forEach(select => totalNormal += parseFloat(select.value));
 
     const cantidad = inputCantidad ? parseInt(inputCantidad.value) : 1;
     if (selects.length === 1) totalNormal *= cantidad;
@@ -35,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const tortasDescuento = Math.floor(cantidad / 3);
       const descuento = tortasDescuento * (precioUnitario * 0.5);
       totalConDescuento -= descuento;
-
-    } else if (tipo === "2") {
+    } 
+    else if (tipo === "2") {
       // Promo 2: 10% OFF directo
       totalConDescuento = totalNormal * 0.9;
-
-    } else if (tipo === "3") {
+    } 
+    else if (tipo === "3") {
       // Promo 3: Combo dulce - 15% OFF sobre el total
       totalConDescuento = totalNormal * 0.85;
     }
@@ -48,8 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
     // Mostrar resultados
     // ----------------------------
+    const ahorro = totalNormal - totalConDescuento;
     normalEl.textContent = formato(totalNormal);
     descuentoEl.textContent = formato(totalConDescuento);
+    ahorroEl.textContent = formato(ahorro);
   }
 
   // ----------------------------
